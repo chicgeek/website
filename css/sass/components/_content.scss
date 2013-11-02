@@ -5,7 +5,7 @@ section {
 }
 
 h2 {
-    color: $color-secondary;
+    color: $colour-secondary;
     font-family: $font-serif;
     font-size: 1.7em;
     font-weight: normal;
@@ -15,19 +15,19 @@ h2 {
 }
 h3 {
     margin: 1em 0 0.2em 0;
-    color: $color-primary-light;
+    color: $colour-primary-light;
     font-size: 1em;
     font-weight: normal;
 }
 
 .top {
     position: absolute;
-    top: 3em;
+    top: 2.4em;
     right: 0;
     border: none;
     font-size: 0.7em;
     font-weight: normal;
-    color: $color-tertiary;
+    color: $colour-tertiary;
     text-transform: uppercase;
     @include break($medium) {
         display: none;

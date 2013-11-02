@@ -11,11 +11,11 @@ h1 {
     text-transform: uppercase;
     line-height: 0.91em;
     .kishimoto {
-        color: $color-secondary;
+        color: $colour-secondary;
     }
 }
 .byline {
-    color: $color-primary-light;
+    color: $colour-primary-light;
     font-family: $font-serif;
     text-transform: lowercase;
     letter-spacing: -0.05em;
@@ -23,18 +23,18 @@ h1 {
     margin: 0.3em 0.2em;
     a {
         border: 0;
-        color: $color-primary-light;
+        color: $colour-primary-light;
         font-weight: normal;
         &:hover {
-            color: $color-primary-light;
-            color: rgba($color-primary, 0.45);
+            color: $colour-primary-light;
+            color: rgba($colour-primary, 0.45);
         }
     }
 }
 
 .blather {
     margin: 1.5em 5% 0 5%;
-    color: $color-tertiary;
+    color: $colour-tertiary;
     font-family: $font-serif;
     font-size: 1.4em;
     line-height: 1.5em;

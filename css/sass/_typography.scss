@@ -6,11 +6,11 @@ p {
 }
 
 a {
-	@include link-colors($color-primary, $color-tertiary, $color-tertiary, $color-primary, $color-tertiary);
-    border-bottom: 1px dotted $color-primary;
+	@include link-colors($colour-primary, $colour-tertiary, $colour-tertiary, $colour-primary, $colour-tertiary);
+    border-bottom: 1px dotted $colour-primary;
     text-decoration: none;
     font-weight: bold;
 }
 a:hover {
-    border-bottom: 1px solid $color-tertiary;
+    border-bottom: 1px solid $colour-tertiary;
 }
