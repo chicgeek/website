@@ -1,0 +1,72 @@
+.ribbon .outer {
+    width: 15.8em;
+    height: 4.5em;
+    background-color: #377c6b;
+    background: linear-gradient(to top, #377c6b, #146c56);
+    color: #fff;
+    text-align: center;
+    font-family: sans-serif;
+    overflow: visible;
+}
+
+.ribbon .outer:after {
+    display: none;
+    content: "";
+    position: absolute;
+    height: 0em;
+    width: 0em;
+    left: 0;
+    top: 4.5em;
+    border-top: 1em solid #377c6b;
+    border-left: 7.9em solid transparent;
+    border-right: 7.9em solid transparent;
+    transform: rotate(0.01deg);
+}
+
+.ribbon .inner {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 0.9em;
+    width: 17em;
+    height: 3.9em;
+    background-color: $color-tertiary;
+    background: linear-gradient(to top, $color-tertiary, #3c8572);
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.ribbon .inner:after {
+    content: "";
+    position: absolute;
+    height: 0em;
+    width: 0em;
+    left: 0;
+    top: 4.8em;
+    border-top: 14px solid $color-tertiary;
+    border-left: 8.5em solid transparent;
+    border-right: 8.5em solid transparent;
+    z-index: 1;
+    transform: rotate(0.01deg);
+}
+
+.ribbon .inner h2 {
+    margin: 0;
+    color: #fff;
+    font-family: $font-serif;
+    font-size: 1.3em;
+    text-align: center;
+    text-transform: none;
+    text-shadow: 1px 1px #3C8572;
+}
+
+.ribbon .inner a {
+    color: #fff;
+    border-bottom: 1px dotted #fff;
+    font-weight: normal;
+}
+
+.ribbon .inner a:hover {
+    border-bottom-style: solid;
+}

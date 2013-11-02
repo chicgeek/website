@@ -1,0 +1,43 @@
+.social {
+    @extend .cf;
+    a {
+        float: left;
+        margin-top: 1em;
+        border: none;
+        width: 16.6666%;
+        text-align: center;
+        &:hover path{
+            &.twitter {
+                fill: #4099FF;
+            }
+
+            &.facebook {
+                fill: #3B5998;
+            }
+
+            &.googleplus {
+                fill: #db4a39;
+            }
+
+            &.github {
+                fill: #171515;
+            }
+
+            &.linkedin {
+                fill: #0e76a8;
+            }
+
+            &.email {
+                fill: #800080;
+            }
+        }
+    }
+    path {
+        fill: $color-primary-light;
+        transition: 0.8s;
+    }
+    svg {
+        width: 80%;
+        max-height: 100%;
+    }
+}

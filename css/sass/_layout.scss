@@ -1,0 +1,44 @@
+$medium: 768px;
+$top-margin: em(200px);
+
+aside {
+	margin-top: 10em;
+	@include break($medium) {
+		position: fixed;
+		right: 55%;
+		left: 5%;
+		max-width: 600px;
+		margin-top: $top-margin;
+	}
+}
+
+.content {
+	margin: 2em 0;
+	@include break($medium) {
+		position: absolute;
+		left: 50%;
+		right: 5%;
+		max-width: 650px;
+		margin: 0;
+		padding-bottom: 2em;
+	}
+}
+
+.ribbon {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    .outer {
+    	position: relative;
+    	left: -50%;
+    }
+	@include break($medium) {
+		position: relative;
+		top: 0;
+		margin: 0 auto;
+		height: $top-margin;
+	    .outer {
+	    	display: inline;
+	    }
+	}
+}
