@@ -34,20 +34,3 @@ ul, ol {
     position: absolute;
     left: -5000px;
 }
-
-section {
-    position: relative;
-    padding: 1em 0;
-    border-top: 1px solid #ddd;
-}
-
-.top {
-    position: absolute;
-    top: 3em;
-    right: 0;
-    border: none;
-    font-size: 0.7em;
-    font-weight: normal;
-    color: $color-tertiary;
-    text-transform: uppercase;
-}

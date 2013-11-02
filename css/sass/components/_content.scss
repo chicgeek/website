@@ -1,0 +1,35 @@
+section {
+    position: relative;
+    padding: 2em 0 1em 0;
+    border-top: 1px solid #ddd;
+}
+
+h2 {
+    color: $color-secondary;
+    font-family: $font-serif;
+    font-size: 1.7em;
+    font-weight: normal;
+    letter-spacing: -0.05em;
+    text-transform: lowercase;
+    margin: 0 0 0.5em 0;
+}
+h3 {
+    margin: 1em 0 0.2em 0;
+    color: $color-primary-light;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.top {
+    position: absolute;
+    top: 3em;
+    right: 0;
+    border: none;
+    font-size: 0.7em;
+    font-weight: normal;
+    color: $color-tertiary;
+    text-transform: uppercase;
+    @include break($medium) {
+        display: none;
+    }
+}
