@@ -304,30 +304,19 @@ h3 {
 }
 
 .social {
-  text-align: center;
-}
-
-.social ul {
-  display: inline-block;
-  text-align: center;
-  width: 100%;
-  white-space: nowrap;
-}
-
-.social li {
-  display: inline-block;
-  text-align: center;
-  width: 15%;
 }
 
 .social a {
+  float: left;
+  margin-top: 1em;
   border: none;
+  width: 16.6666%;
+  text-align: center;
 }
 
 .social svg {
-  width: 100%;
-  max-height: 6em;
-  padding: 0;
+  width: 80%;
+  max-height: 100%;
 }
 
 .social a path {
@@ -426,15 +415,6 @@ h3 {
   .top {
     right: auto;
     left: -5000px;
-  }
-
-  .social ul {
-    width: 95%;
-  }
-
-  .social svg {
-    padding: 0.2em;
-    height: 100%;
   }
 }
 @media screen and (orientation: landscape) and (max-width: 768px) {
