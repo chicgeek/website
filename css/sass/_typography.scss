@@ -1,18 +1,6 @@
 $base-font-size: 16px;
 $base-line-height: 24px;
 
-h1 {
-    margin: 0;
-    color: #888;
-    font-family: $font-headline;
-    font-size: 4.5em;
-    letter-spacing: -0.07em;
-    text-transform: uppercase;
-    line-height: 0.905em;
-    .kishimoto {
-	    color: $color-secondary;
-	}
-}
 h2 {
     color: $color-secondary;
     font-family: $font-serif;

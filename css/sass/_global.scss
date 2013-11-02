@@ -1,3 +1,7 @@
+* {
+    @include box-sizing(border-box);
+}
+
 .cf:before,
 .cf:after {
     content: " ";
@@ -21,11 +25,6 @@ ul, ol {
     padding: 0;
 }
 
-img {
-    vertical-align: middle;
-    border: 0;
-}
-
 .chromeframe {
     margin: 0.2em 0;
     padding: 0.2em 0;
@@ -34,52 +33,6 @@ img {
 .mobilehide {
     position: absolute;
     left: -5000px;
-}
-
-header {
-    width: 100%;
-    text-transform: lowercase;
-}
-
-.byline {
-    color: $color-primary-light;
-    font-family: $font-serif;
-    font-weight: normal;
-    font-size: 1em;
-    letter-spacing: -0.058em;
-    white-space: nowrap;
-    margin: 0 0.2em;
-}
-
-.byline a {
-    border: 0;
-    color: $color-primary-light;
-    font-weight: normal;
-    cursor: default;
-}
-
-.byline a:hover {
-    color: #c4c4c4;
-}
-
-.moreinfo {
-    position: absolute;
-    left: -5000px;
-}
-
-.blather {
-    margin: 1em 5% 0 5%;
-    color: $color-tertiary;
-    font-family: $font-serif;
-    font-size: 1.2em;
-    letter-spacing: -0.05em;
-    text-align: center;
-}
-
-.blather a {
-    color: $color-tertiary;
-    font-weight: normal;
-    border-bottom: 1px dotted $color-tertiary !important;
 }
 
 section {
