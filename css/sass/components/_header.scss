@@ -13,6 +13,10 @@ h1 {
     .kishimoto {
         color: $colour-secondary;
     }
+    @media (orientation: landscape) and (max-width: $medium) {
+        width: 63%;
+        white-space: nowrap;
+    }
 }
 .byline {
     color: lighten($colour-primary, 40%);

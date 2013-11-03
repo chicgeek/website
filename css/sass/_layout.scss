@@ -3,12 +3,6 @@ $top-space: em(180px);
 
 aside {
 	padding-top: $top-space;
-	@media (orientation: landscape) and (max-width: $medium) {
-		h1 {
-			white-space: nowrap;
-			max-width: $medium*0.465;
-		}
-	}
     @include break($medium) {
         position: fixed;
         right: 53%;
