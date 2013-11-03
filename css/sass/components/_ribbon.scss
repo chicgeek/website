@@ -1,20 +1,42 @@
-$ribbon-width: 20em;
+$ribbon-width: 16em;
 $ribbon-height: 5em;
 
 .ribbon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $top-space;
     text-align: center;
-    .outer {
-        display: inline-block;
-        max-width: $ribbon-width;
-        width: 75%;
-        height: $ribbon-height*1.08;
-        background-color: $colour-tertiary;
+    .inner, .outer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 33%;
+        @include rotate(0.05deg);
     }
     .inner {
-        height: $ribbon-height;
-        background: darken($colour-tertiary, 10%);
-        margin: 0 2%;
-        padding-top: 1em;
+        z-index: -1;
+        border: 1em solid darken($colour-tertiary, 10%);
+        border-width: $ribbon-height $ribbon-width/2 1em $ribbon-width/2;
+        border-bottom: 1em solid transparent;
+    }
+    .outer {
+        z-index: -2;
+        border: 1em solid $colour-tertiary;
+        border-width: $ribbon-height*1.08 $ribbon-width/1.9 1em $ribbon-width/1.9;
+        border-bottom: 1em solid transparent;
+    }
+    h2 {
+        color: #fff;
+        text-transform: none;
+        margin: 0;
+        padding: 0.8em 0 0 0;
+        font-size: 1.3em;
+        text-shadow: 1px 1px darken($colour-tertiary, 15%);
     }
     p {
         color: #fff;
@@ -29,11 +51,7 @@ $ribbon-height: 5em;
             border-bottom-style: solid;
         }
     }
-    h2 {
-        color: #fff;
-        text-transform: none;
-        margin: 0;
-        font-size: 1.3em;
-        text-shadow: 1px 1px darken($colour-tertiary, 15%);
+    @include break($medium) {
+        position: relative;
     }
 }
