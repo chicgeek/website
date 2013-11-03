@@ -3,7 +3,26 @@ $top-space: em(180px);
 
 aside {
 	padding-top: $top-space;
+	@media (orientation: landscape) {
+		padding-top: $top-space/2.2;
+		position: absolute;
+		right: 53%;
+		left: 4%;
+		header {
+			clear:both;
+			float: right;
+			max-width: 565px;
+		}
+		.blather {
+			position: absolute;
+			right: -115%;
+			bottom: 1em;
+			width: 95%;
+			text-align: right;
+		}
+	}
 	@include break($medium) {
+		padding-top: $top-space;
 		position: fixed;
 		right: 53%;
 		left: 4%;
@@ -12,17 +31,28 @@ aside {
 			float: right;
 			max-width: 565px;
 		}
+		.blather {
+			position: relative;
+			right: auto;
+			bottom: auto;
+			width: auto;
+			text-align: center;
+		}
 	}
 }
 
 .content {
 	margin: 4em 0 2em 0;
+	@media (orientation: landscape) {
+		padding-top: $top-space*1.6;
+		clear: both;
+	}
 	@include break($medium) {
 		position: absolute;
 		left: 50%;
 		right: 5%;
 		max-width: 600px;
 		margin: 0;
-		padding-bottom: 2em;
+		padding: 0 0 2em 0;
 	}
 }
