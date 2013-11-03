@@ -25,9 +25,10 @@ h3 {
     top: 2.4em;
     right: 0;
     border: none;
+    color: $link-colour-2;
     font-size: 0.7em;
+    line-height: 1.3em;
     font-weight: normal;
-    color: $colour-tertiary;
     text-transform: uppercase;
     @include break($medium) {
         display: none;

@@ -30,7 +30,18 @@ ul, ol {
     padding: 0.2em 0;
 }
 
-.mobilehide {
+.mobile-hide {
     position: absolute;
     left: -5000px;
+    @include break($medium) {
+        position: relative;
+        left: auto;
+    }
+}
+
+.mobile-show {
+    @include break($medium) {
+        position: absolute;
+        left: -5000px;
+    }
 }

@@ -1,13 +1,12 @@
 $medium: 768px;
-$top-margin: em(180px);
+$top-space: em(180px);
 
 aside {
-	margin-top: 10em;
+	padding-top: $top-space;
 	@include break($medium) {
 		position: fixed;
-		margin-top: $top-margin;
-			right: 53%;
-			left: 4%;
+		right: 53%;
+		left: 4%;
 		header {
 			clear:both;
 			float: right;
@@ -17,7 +16,7 @@ aside {
 }
 
 .content {
-	margin: 2em 0;
+	margin: 4em 0 2em 0;
 	@include break($medium) {
 		position: absolute;
 		left: 50%;
@@ -41,7 +40,7 @@ aside {
 		position: relative;
 		top: 0;
 		margin: 0 auto;
-		height: $top-margin;
+		height: $top-space;
 	    .outer {
 	    	display: inline;
 	    }

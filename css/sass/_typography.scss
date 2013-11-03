@@ -5,12 +5,15 @@ p {
     margin: 0 0 1em 0;
 }
 
+$link-colour-1: $colour-primary;
+$link-colour-2: darken($colour-tertiary, 10%);
+
 a {
-	@include link-colors($colour-primary, darken($colour-tertiary, 10%), $colour-tertiary, $colour-primary, darken($colour-tertiary, 10%));
-    border-bottom: 1px dotted $colour-primary;
+	@include link-colors($link-colour-1, $link-colour-2, $colour-tertiary, $link-colour-1, $link-colour-2);
+    border-bottom: 1px dotted $link-colour-1;
     text-decoration: none;
     font-weight: bold;
 }
 a:hover {
-    border-bottom: 1px solid $colour-tertiary;
+    border-bottom: 1px solid $link-colour-2;
 }
