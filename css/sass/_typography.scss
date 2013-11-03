@@ -6,7 +6,7 @@ p {
 }
 
 a {
-	@include link-colors($colour-primary, $colour-tertiary, $colour-tertiary, $colour-primary, $colour-tertiary);
+	@include link-colors($colour-primary, darken($colour-tertiary, 10%), $colour-tertiary, $colour-primary, darken($colour-tertiary, 10%));
     border-bottom: 1px dotted $colour-primary;
     text-decoration: none;
     font-weight: bold;

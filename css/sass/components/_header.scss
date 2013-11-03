@@ -15,7 +15,7 @@ h1 {
     }
 }
 .byline {
-    color: $colour-primary-light;
+    color: lighten($colour-primary, 40%);
     font-family: $font-serif;
     text-transform: lowercase;
     letter-spacing: -0.05em;
@@ -23,11 +23,10 @@ h1 {
     margin: 0.3em 0.2em;
     a {
         border: 0;
-        color: $colour-primary-light;
+        color: lighten($colour-primary, 40%);
         font-weight: normal;
         &:hover {
-            color: $colour-primary-light;
-            color: rgba($colour-primary, 0.45);
+            color: lighten($colour-primary, 35%);
         }
     }
 }

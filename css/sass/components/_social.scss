@@ -28,7 +28,7 @@
         }
     }
     path {
-        fill: $colour-primary-light;
+        fill: lighten($colour-primary, 40%);
         transition: 0.8s;
     }
     svg {

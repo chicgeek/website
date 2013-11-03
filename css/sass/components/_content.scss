@@ -15,7 +15,7 @@ h2 {
 }
 h3 {
     margin: 1em 0 0.2em 0;
-    color: $colour-primary-light;
+    color: lighten($colour-primary, 20%);
     font-size: 1em;
     font-weight: normal;
 }
