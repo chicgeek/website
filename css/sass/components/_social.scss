@@ -4,17 +4,11 @@
     a {
         float: left;
         border: none;
-        width: 16.6666%;
+        width: (99/7)*1%;
         text-align: center;
         &:hover path {
-            &.twitter {
-                fill: #4099FF;
-            }
-            &.facebook {
-                fill: #3B5998;
-            }
-            &.googleplus {
-                fill: #db4a39;
+            &.email {
+                fill: #800080;
             }
             &.github {
                 fill: #171515;
@@ -22,8 +16,17 @@
             &.linkedin {
                 fill: #0e76a8;
             }
-            &.email {
-                fill: #800080;
+            &.twitter {
+                fill: #4099FF;
+            }
+            &.googleplus {
+                fill: #db4a39;
+            }
+            &.facebook {
+                fill: #3B5998;
+            }
+            &.pinterest {
+                fill: #c92228;
             }
         }
     }
@@ -32,7 +35,7 @@
         transition: 0.8s;
     }
     svg {
-        width: 80%;
+        width: 90%;
         max-height: 100%;
     }
 }
