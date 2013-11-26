@@ -4,7 +4,7 @@
     a {
         float: left;
         border: none;
-        width: (99/7)*1%;
+        width: (99/5)*1%;
         text-align: center;
         &:hover path {
             &.email {
@@ -30,6 +30,9 @@
             }
         }
     }
+    .social-extra {
+        display: none;
+    }
     path {
         fill: lighten($colour-primary, 40%);
         transition: 0.8s;
@@ -37,5 +40,29 @@
     svg {
         width: 90%;
         max-height: 100%;
+    }
+    @include break(600px) {
+        a {
+            width: (99/7)*1%;
+        }
+        .social-extra {
+            display: inline;
+        }
+    }
+    @include break($medium) {
+        a {
+            width: (99/5)*1%;
+        }
+        .social-extra {
+            display: none;
+        }
+    }
+    @include break(1000px) {
+        a {
+            width: (99/7)*1%;
+        }
+        .social-extra {
+            display: inline;
+        }
     }
 }
