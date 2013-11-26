@@ -41,7 +41,7 @@
         width: 90%;
         max-height: 100%;
     }
-    @include break(600px) {
+    @include break(500px) {
         a {
             width: (99/7)*1%;
         }
