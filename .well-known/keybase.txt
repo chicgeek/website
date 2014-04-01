@@ -1,0 +1,65 @@
+==================================================================
+https://keybase.io/chicgeek
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://www.laurakishimoto.com
+  * I am chicgeek (https://keybase.io/chicgeek) on keybase.
+  * I have a public key with fingerprint 0A09 1719 22A4 5DDA 8002  C383 394F 8991 FF08 4CD9
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "0a09171922a45dda8002c383394f8991ff084cd9",
+            "host": "keybase.io",
+            "key_id": "394f8991ff084cd9",
+            "uid": "7441c1720bc2af034a55533e52b44600",
+            "username": "chicgeek"
+        },
+        "service": {
+            "hostname": "www.laurakishimoto.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1396347768,
+    "expire_in": 157680000,
+    "prev": "0bd70dbce720451d44e332303d98cddfc3da5c5ce751f80795cddb400d11cc76",
+    "seqno": 2,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v0.1.1
+Comment: https://keybase.io/crypto
+
+yMH9AnicbZFtSGRVGMdnNG1nHF8WWjODXm5EaKOc+zb35UNlMMZASxvbyNIGw73n
+njtzHL13uvfO+DKaZWFoJVt+UFZHdEHqQ9CLIFKLWWqUubor7EDoUkSlRQQF+UFF
+PXdwv3W+nHP+z+/5P+c8z3J5scfvXappbR6rjtzx/rB4kPZclEc6s5Rqal2UnKWS
+qLDp2IgjK2Vhw6FkCihAogVaYhiF4zVNEQFgICuyrMTpoiTRug5EDmoSFaQSpu1m
+EBtVsVEjNolGLjGsEfV/+HQhIHAcDWmBASpkFB2wnMLzPMsinlE5LgSAC9rIMpR2
+RGiYwDCOUJLqDVJEzWBI1Gyh9CnR0dHR2KakLSWJ7QRuNx2zEZrtxCVlkTM02wiT
+cJyU7Fo4XalCDlJjp24xFRsa6QBJyCDLxqZByTQhoYNde5qVQiwnCCExSKHOFLZQ
+DLsETxRAllsGZdy+qZoANBUi8jOOpzWOQyzLsIDVJBFqmg5ZTeEhT+I8rYtAkHii
+qhwAGk1DKIRIfRu9apiUzJBnKnFiaeO4oThpC1G93yy+co/H6/eUlhS5M/T4fVV3
+J/th9t5js7kyh9eoN0e2Zh978OG39yKrA3TGN1Py90Rd7Vz3R9f381+Zf4rxwBfG
++HHN52X5+nfxAWjKtQbGPluvi76+GR5UNljnn/muCx8fRiZvBl+LD3x/qyI63LKf
+7/9ZHO4//Gs58sl/l366/Vzg2kvfXomeLdve/PIJ/+OldY+WTTcN1b43uHDYcF7Z
+uSHtn3t6b6Zl55eFrfo/quae/e6F3U/L3/gg//tV9Sgann+oepfyvhiWh9Z+9CVH
+n1kY+zr0fGD7/n+bxyfFlVxx5XT3BoxEYhtP2kerv/2qr58ZldnsxPEsF57Kvvx+
+Q8V9uUcu9/j63unpA1NFxeVvPdC2+tToxNLKCUQdFAw=
+=1ByU
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/chicgeek
+
+==================================================================
