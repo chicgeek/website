@@ -25,15 +25,26 @@ body {
     }
 }
 
-header,
+.header,
 .content {
+    padding: 1rem 0;
+
     @media (min-width: $layout-break) {
         flex: 1;
         padding: 3rem;
     }
 }
 
-header {
+.header {
+
+    &__byline {
+        color: $colour-muted;
+    }
+
+    &__description {
+        color: $colour-primary;
+    }
+
     @media (min-width: $break-s) {
         text-align: center;
     }
@@ -44,6 +55,7 @@ header {
 }
 
 .content {
+
     @media (min-width: $layout-break) {
         padding-left: 0;
         max-height: 100vh;
@@ -59,18 +71,16 @@ section {
     &:last-of-type {
         border-bottom: 1px solid $colour-muted;
     }
-
-    @media (min-width: $layout-break) {
-        padding: 1em 0;
-    }
 }
 
 .top {
     position: absolute;
-    top: 3em;
+    top: 0;
     right: 0;
-    font-size: 0.8rem;
+    padding: 3.7em 0 1em 3.7em;
+    font-size: 0.7rem;
     text-transform: uppercase;
+    border: 0;
 
     @media (min-width: $layout-break) {
         display: none;
