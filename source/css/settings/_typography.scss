@@ -23,3 +23,9 @@ $font-serif: 'Slabo 27px', serif;
     letter-spacing: -0.05em;
     line-height: 0.9;
 }
+
+body {
+    color: $colour-black;
+    font-family: $font-sans;
+    line-height: 1.5;
+}
