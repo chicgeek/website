@@ -91,7 +91,7 @@ gulp.task('svg', function () {
 gulp.task('favicon', function(done) {
     $.realFavicon.generateFavicon({
         masterPicture: './source/images/favicons/favicon.svg',
-        dest: './web/images/favicons',
+        dest: './',
         iconsPath: '/',
         design: {
             ios: {
