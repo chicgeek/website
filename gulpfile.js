@@ -9,21 +9,22 @@ let gulp = require('gulp'),
     holo = require('holograph');
 
 let settings = {
-    cssSource           : './css/',
-    cssDestination      : './',
-    jsSource            : './js/',
-    jsDestination       : './',
-    imageSource         : './images/',
-    imageDestination    : './',
+    source              : './source',
+    cssSource           : '/css/',
+    cssDestination      : './web',
+    jsSource            : '/js/',
+    jsDestination       : './web',
+    imageSource         : '/images/',
+    imageDestination    : './web/images',
     holoDestination     : './style-guide',
-    cssLibs             : require('node-normalize-scss'),
+    cssLibs             : require('node-normalize-scss').includePaths,
     googleFonts         : 'https://fonts.googleapis.com/css?family=Roboto+Condensed',
     faviconData         : 'faviconData.json'
 }
 
 // compile SCSS to CSS
 gulp.task('scss', function() {
-    return gulp.src([settings.cssSource + '/**/*.scss'])
+    return gulp.src([settings.source + settings.cssSource + '/**/*.scss'])
         .pipe($.sourcemaps.init())
         .pipe($.sass({
             includePaths: settings.cssLibs,
@@ -38,7 +39,7 @@ gulp.task('scss', function() {
 
 // compile JS
 gulp.task('js', function() {
-    return gulp.src(settings.jsSource)
+    return gulp.src(settings.source + settings.jsSource)
         .pipe($.sourcemaps.init())
         .pipe($.concat('main.js'))
         .pipe($.sourcemaps.write())
@@ -48,7 +49,7 @@ gulp.task('js', function() {
 // build holograph style guide
 gulp.task('holograph', ['scss'], function(cb) {
     holo.holograph({
-        source: settings.holoSource,
+        source: settings.source + settings.cssSource,
         destination: settings.holoDestination,
         documentation_assets: './node_modules/holograph/assets',
         dependencies: [
@@ -56,11 +57,7 @@ gulp.task('holograph', ['scss'], function(cb) {
         ],
         css_include: [
             settings.googleFonts,
-            '/main.css'
-        ],
-        js_include: [
-            '/main.js',
-            '/svg.js'
+            './web/main.css'
         ],
         index: 'home',
         nav_level: 'section',
@@ -73,7 +70,7 @@ gulp.task('holograph', ['scss'], function(cb) {
 gulp.task('svg', function () {
     return gulp
         .src([
-            settings.imageSource + '/svg/*.svg'
+            settings.source + settings.imageSource + '/svg/*.svg'
         ])
         .pipe($.svgmin(function (file) {
             var prefix = settings.basename(file.relative, settings.extname(file.relative));
@@ -171,24 +168,21 @@ gulp.task('favicon-update', function(done) {
 });
 
 // watch for changes
-gulp.task('watch', ['build'], function() {
-    console.log('Waiting for changes…');
-    gulp.watch([
-        settings.cssSource + '**/*',
-        settings.jsSource + '**/*',
-        settings.svgSource + '**/*'
-    ],
+gulp.task('dev', ['build'], function() {
+    var watcher = gulp.watch(
+        settings.source + '/**/*',
         ['build']
     );
+    watcher.on('change', function(event) {
+        console.log('File ' + event.path + ' was ' + event.type + ', running tasks…');
+    });
 });
 
 // build
-gulp.task('build', ['svg', 'scss', 'js']);
+gulp.task('build', ['svg', 'scss', 'js', 'holograph']);
 
-// for front end development
-gulp.task('dev', ['watch'], function() {
-    console.log('Waiting for changes…');
-});
+// reserved for deployment tasks
+gulp.task('default', ['build']);
 
 // reserved for deployment tasks
 gulp.task('deploy', ['build']);
