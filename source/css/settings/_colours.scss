@@ -6,6 +6,11 @@ category: colours
 ---
 */
 
-   $black: #000;     // hg-palette: Vanilla
-$grey:#ccc;//hg-palette: Vanilla
-$white  : #fff;//hg-palette:Vanilla
+$colour-primary     : #37806d;  // hg-palette: Brand colours
+$colour-secondary   : #888;     // hg-palette: Brand colours
+$colour-accent      : #d4e05c;  // hg-palette: Brand colours
+
+$colour-black       : #666;     // hg-palette: Additional colours
+$colour-muted       : #ddd;     // hg-palette: Additional colours
+$colour-primary-alt : #2f6b5c;  // hg-palette: Additional colours
+$colour-primary-alt : darken($colour-primary, 10%);

@@ -1,0 +1,72 @@
+/*doc
+---
+title: headings
+name: headings
+category: atoms
+---
+
+Headings should follow appropriate heading hierarchy.
+
+```html_example
+    <h1>Hello, world!</h1>
+    <h2>Hello, world!</h2>
+    <h3>Hello, world!</h3>
+    <h4>Hello, world!</h4>
+```
+*/
+
+
+body {
+    color: $colour-black;
+    font-family: Open Sans, sans-serif;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+h1 {
+    margin: 0;
+    color: $colour-secondary;
+    @include font-heading;
+    font-size: 23vw;
+    word-spacing: -1vw;
+
+    @media (min-width: $break-s) {
+        font-size: 14.5vw;
+    }
+
+    @media (min-width: $layout-break) {
+        font-size: 12vw;
+    }
+}
+
+h2 {
+    color: $colour-primary;
+    font-family: $font-serif;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    margin: 2rem 0 1rem;
+    color: $colour-secondary;
+}
+
+.accent {
+    color: $colour-accent;
+}
+
+header {
+    font-size: 1.5rem;
+    font-family: $font-serif;
+}
