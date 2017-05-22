@@ -1,0 +1,128 @@
+/* ============================
+    utilities
+============================ */
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* ============================
+    hgt responsive styles
+============================ */
+.hgt-container {
+    max-width: 100%;
+}
+.hgt-pagehead-title {
+    float: left;
+}
+.hgt-menu-item.hgt-menu-item {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    .hgt-pagehead {
+        padding-bottom: 0;
+    }
+    .hgt-pagehead-title,
+    .hgt-pagehead-nav {
+        float: none;
+    }
+    .hgt-pagehead-nav-item {
+        margin: 0 20px 0 0;
+    }
+    .hgt-container {
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+    .hgt-sticky {
+        max-width: 22%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hgt-column--mobile.hgt-column--mobile {
+        width: 100%;
+    }
+    .hgt-column--mobile + .hgt-column--mobile {
+        margin-top: 2em;
+    }
+    .hgt-sticky.hgt-sticky {
+        position: static;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* ============================
+    colour swatches
+============================ */
+.hgt-palette {
+    margin-bottom: 2em;
+}
+.hgt-palette .hgt-column {
+    margin-bottom: 1em;
+}
+.hgt-swatch {
+    margin-bottom: 1em;
+    height: 6em;
+    border: 1px solid #ccc;
+}
+
+@media screen and (max-width: 600px) {
+    .hgt-swatch {
+        display: inline-block;
+        height: 4em;
+        width: 25%;
+        margin: 0 1em 0 0;
+        vertical-align: middle;
+    }
+    .hgt-palette .hgt-column {
+        margin-top: 0;
+    }
+}
+
+/* ============================
+    table styles
+============================ */
+table.styleguide th,
+table.styleguide td {
+    text-align: left;
+    padding: 0 2em 2em 0;
+}
+table.styleguide th:last-child,
+table.styleguide td:last-child {
+    padding-right: 0;
+}
+
+@media screen and (max-width: 600px) {
+    table.styleguide.styleguide {
+        width: 100%;
+    }
+    table.styleguide thead {
+        display: none;
+    }
+    table.styleguide tr + tr {
+        display: block;
+        border-top: 1px solid #eee;
+    }
+    table.styleguide td {
+        display: block;
+        margin: 2em 0;
+        padding: 0;
+    }
+}
+
+/* ============================
+    other fixes
+============================ */
+.hgt-content code.styleguide:before,
+.hgt-content code.styleguide:after,
+.hgt-content tt.styleguide:before,
+.hgt-content tt.styleguide:after {
+    content: '\00a0';
+}
+
+.one-fourth:nth-of-type(4n+1) {
+    clear: left;
+}

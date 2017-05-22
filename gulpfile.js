@@ -150,8 +150,8 @@ gulp.task('favicon', function(done) {
     });
 });
 
-// inject favicon markup on pages
-gulp.task('favicon-markup', function() {
+// inject favicon markup on pages, copy markup to root
+gulp.task('markup', function() {
     return gulp.src([ './source/markup/**/*.html' ])
         .pipe($.realFavicon.injectFaviconMarkups(JSON.parse(fs.readFileSync(settings.faviconData)).favicon.html_code))
         .pipe(gulp.dest('./'));
@@ -179,7 +179,7 @@ gulp.task('dev', ['build'], function() {
 });
 
 // build
-gulp.task('build', ['svg', 'scss', 'js', 'holograph']);
+gulp.task('build', ['svg', 'scss', 'js', 'holograph', 'markup']);
 
 // reserved for deployment tasks
 gulp.task('default', ['build']);
