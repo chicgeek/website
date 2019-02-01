@@ -101,12 +101,12 @@
     overflow: hidden;
 
     .section--active > & {
-      max-height: 350px;
+      max-height: 380px;
     }
 
     // edge: https://stackoverflow.com/a/50788621/1846329
     &:focus-within {
-      max-height: 350px;
+      max-height: 380px;
     }
 
     > * {
