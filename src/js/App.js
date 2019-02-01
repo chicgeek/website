@@ -34,15 +34,15 @@ class App extends Component {
         >
           <h2
             className={`section__heading section__heading--${section.id}`}
+            children={section.title}
             tabIndex="0"
-            dangerouslySetInnerHTML={ { __html: section.label } }
             onClick={(e) => this.focus(e, section.id)}
             onFocus={(e) => this.focus(e, section.id)}
             onBlur={(e) => this.blur()}
           />
           <div
             className="section__content"
-            dangerouslySetInnerHTML={ { __html: section.content } }
+            children={section.content}
           />
         </section>
       )

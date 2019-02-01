@@ -1,17 +1,19 @@
+import React, { Fragment } from 'react';
+
 export const data = [
   {
     id: 'person',
-    label: 'Personal details',
-    content: `
-        <h3>About me</h3>
-        <p>I'm a Canadian living and working in Sheffield&nbsp;UK.</p>
+    title: <Fragment>Personal details</Fragment>,
+    content: <Fragment>
+      <h3>About me</h3>
+      <p>I'm a Canadian living and working in Sheffield&nbsp;UK.</p>
       <p>I am a front end developer with over 10 years of experience as part of agency and in-house teams. In addition to technical excellence, I am a leader of people and advocate for inclusive work cultures.</p>
-        `
+    </Fragment>
   },
   {
     id: 'skills',
-    label: 'Technical skills',
-    content: `
+    title: <Fragment>Technical skills</Fragment>,
+    content: <Fragment>
       <ul>
         <li>
           <h3>HTML</h3>
@@ -26,21 +28,21 @@ export const data = [
           React, ES6+, jQuery…
         </li>
       </ul>
-        `
+   </Fragment>
   },
-    {
+  {
     id: 'approach',
-    label: 'User-centric approach',
-    content: `
+    title: <Fragment>User-centric approach</Fragment>,
+    content: <Fragment>
         <h3>Users first</h3>
       <p>I focus on the intersection of user need, client demand, and technical limitation.</p>
       <p>I prioritise user experience, accessibility, and brand identity in my work.</p>
-      `
+    </Fragment>
   },
   {
     id: 'leadership',
-    label: 'Team leadership',
-    content: `
+    title: <Fragment>Team leadership</Fragment>,
+    content: <Fragment>
       <ul>
         <li>
           <h3>Leader and mentor</h3>
@@ -55,12 +57,12 @@ export const data = [
           I strive for a safe and inclusive work environment for everyone.
         </li>
       </ul>
-        `
+    </Fragment>
   },
   {
     id: 'jobs',
-    label: 'Employment history',
-    content: `
+    title: <Fragment>Employment history</Fragment>,
+    content: <Fragment>
       <ul>
         <li>
           <h3>Inviqa</h3>
@@ -78,12 +80,12 @@ export const data = [
           University of Western Ontario
         </li>
       </ul>
-    `
+    </Fragment>
   },
   {
     id: 'contact',
-    label: 'Contact&nbsp;me online',
-    content: `
+    title: <Fragment>Contact&nbsp;me online</Fragment>,
+    content: <Fragment>
         <ul>
         <li>
           <a href="https://www.twitter.com/chicgeek">chicgeek on Twitter</a>
@@ -101,7 +103,7 @@ export const data = [
             <a href="mailto:hello@laurakishimoto.com?subject=An email from laurakishimoto.com">Email me at hello@laurakishimoto.com</a>
         </li>
       </ul>
-    `
+    </Fragment>
   }
 ]
 
