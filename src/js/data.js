@@ -28,6 +28,8 @@ export const data = [
       <p>I am organised and respected by my coworkers. I strive to create and encourage a safe and inclusive work environment for everyone.</p>
       <h3>Manager and mentor</h3>
       <p>I am an empathetic and supportive line manager. I work hard to enable others to do their best and I play an active role in recruitment.</p>
+      <h3>Community contributor</h3>
+      <p>Outside of work, I am well-connected to the Sheffield tech community. I am also an organiser of <a href="https://twitter.com/frontendsheff">Front End Sheffield</a>, as well as a previous organiser of Sheffield JS.</p>
     </Fragment>
   },
   {
