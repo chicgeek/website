@@ -3,7 +3,7 @@ import React, { Fragment } from 'react';
 export const data = [
   {
     id: 'person',
-    title: <Fragment>Personal details</Fragment>,
+    title: <Fragment>Personal <span>details</span></Fragment>,
     content: <Fragment>
       <h3>About me</h3>
       <p>I'm a Canadian living and working in Sheffield&nbsp;UK.</p>
@@ -12,56 +12,27 @@ export const data = [
   },
   {
     id: 'skills',
-    title: <Fragment>Technical skills</Fragment>,
+    title: <Fragment>Developer <span>skills</span></Fragment>,
     content: <Fragment>
-      <ul>
-        <li>
-          <h3>HTML</h3>
-          Semantic code, ARIA, microdata…
-        </li>
-        <li>
-          <h3>CSS</h3>
-          SCSS, LESS, styled components…
-        </li>
-        <li>
-          <h3>JavaScript</h3>
-          React, ES6+, jQuery…
-        </li>
-      </ul>
+      <h3>User-centric approach</h3>
+      <p>I focus on the intersection of user need, client demand, and technical limitation. I prioritise user experience, accessibility, and brand identity in my work.</p>
+      <h3>HTML, CSS, JavaScript</h3>
+      <p>I write accessible HTML styled with SCSS. I have experience with React, Redux, Styled Components, and complex JavaScript applications. I work with my team to ensure quality code, modularity, and maintainability.</p>
    </Fragment>
   },
   {
-    id: 'approach',
-    title: <Fragment>User-centric approach</Fragment>,
-    content: <Fragment>
-        <h3>Users first</h3>
-      <p>I focus on the intersection of user need, client demand, and technical limitation.</p>
-      <p>I prioritise user experience, accessibility, and brand identity in my work.</p>
-    </Fragment>
-  },
-  {
     id: 'leadership',
-    title: <Fragment>Team leadership</Fragment>,
+    title: <Fragment><span>People</span> leadership</Fragment>,
     content: <Fragment>
-      <ul>
-        <li>
-          <h3>Leader and mentor</h3>
-          I am organised and proactive. I am a caring line manager and mentor others.
-        </li>
-        <li>
-          <h3>Recruiter and manager</h3>
-          I interview candidates and play an active role in recruitment. I also have experience with line management.
-        </li>
-        <li>
-          <h3>Positive influencer</h3>
-          I strive for a safe and inclusive work environment for everyone.
-        </li>
-      </ul>
+      <h3>Leader and organiser</h3>
+      <p>I am organised and proactive. I strive to create and encourage a safe and inclusive work environment for everyone.</p>
+      <h3>Manager and mentor</h3>
+      <p>I play an active role in recruitment and am an experienced line manager.</p>
     </Fragment>
   },
   {
     id: 'jobs',
-    title: <Fragment>Employment history</Fragment>,
+    title: <Fragment>Employment <span>history</span></Fragment>,
     content: <Fragment>
       <ul>
         <li>
@@ -84,7 +55,7 @@ export const data = [
   },
   {
     id: 'contact',
-    title: <Fragment>Contact&nbsp;me online</Fragment>,
+    title: <Fragment>Contact me <span>online</span></Fragment>,
     content: <Fragment>
         <ul>
         <li>

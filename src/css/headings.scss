@@ -1,0 +1,55 @@
+.heading {
+  span {
+    display: block;
+  }
+
+  &--name {
+    &:first-line {
+      font-size: 9.4rem; // laura
+    }
+    font-size: 5.4rem; // kishimoto
+  }
+
+  &--person {
+    font-size: 5.85rem; // personal
+    span {
+      font-size: 7.75rem; // details
+    }
+  }
+
+  &--skills {
+    font-size: 5.3rem; // developer
+    span {
+      font-size: 9.6rem; // skills
+    }
+  }
+
+  &--leadership {
+    span {
+      font-size: 8.3rem; // people
+    }
+    font-size: 5rem; // leadership
+  }
+
+  &--approach {
+    font-size: 4.25rem; // approach
+    span {
+      font-size: 5.65rem; // approach
+    }
+  }
+
+  &--jobs {
+    font-size: 4.55rem; // approach
+    span {
+      font-size: 7.08rem; // approach
+    }
+  }
+
+  &--contact {
+    font-size: 4.85rem; // approach
+    span {
+      word-spacing: initial;
+      font-size: 8.3rem; // approach
+    }
+  }
+}

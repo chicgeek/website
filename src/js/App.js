@@ -33,12 +33,12 @@ class App extends Component {
           className={`section ${this.state.activeId === section.id ? 'section--active' : ''}`}
         >
           <h2
-            className={`section__heading section__heading--${section.id}`}
+            className={`section__heading heading--${section.id}`}
             children={section.title}
             tabIndex="0"
             onClick={(e) => this.focus(e, section.id)}
             onFocus={(e) => this.focus(e, section.id)}
-            onBlur={(e) => this.blur()}
+            onBlur={() => this.blur()}
           />
           <div
             className="section__content"

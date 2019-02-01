@@ -10,7 +10,7 @@
 
 @media (min-width: $bp-medium) and (min-height: $bp-medium)  {
   :root {
-    font-size: 1.05vh;
+    font-size: 1.15vh;
   }
 }
 
@@ -26,11 +26,11 @@ body {
 
 h1,
 h2 {
+  font-size: 5.2rem;
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: -0.05rem;
-  word-spacing: 100vw;
   line-height: 0.77;
   font-family: 'Cabin Condensed', 'Arial', sans-serif;
 }
