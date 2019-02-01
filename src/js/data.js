@@ -25,9 +25,9 @@ export const data = [
     title: <Fragment><span>People</span> leadership</Fragment>,
     content: <Fragment>
       <h3>Leader and organiser</h3>
-      <p>I am organised and proactive. I strive to create and encourage a safe and inclusive work environment for everyone.</p>
+      <p>I am organised and respected by my coworkers. I strive to create and encourage a safe and inclusive work environment for everyone.</p>
       <h3>Manager and mentor</h3>
-      <p>I play an active role in recruitment and am an experienced line manager.</p>
+      <p>I am an empathetic and supportive line manager. I work hard to enable others to do their best and I play an active role in recruitment.</p>
     </Fragment>
   },
   {
