@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './App.scss';
+import './../css/app.scss';
 
-class Content extends Component {
+class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -56,4 +56,4 @@ class Content extends Component {
   }
 }
 
-export default Content;
+export default App;

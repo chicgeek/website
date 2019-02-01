@@ -1,0 +1,14 @@
+.header,
+.main,
+.footer {
+  width: 25rem;
+  margin: 0 auto;
+
+  @media (min-width: $bp-medium) {
+    margin-left: $space;
+  }
+
+  @media (min-width: $bp-large) {
+    margin-left: auto;
+  }
+}

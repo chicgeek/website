@@ -1,0 +1,38 @@
+/* ===================================
+    debugging helpers
+=================================== */
+// $debug: true;
+
+$debug: false !default;
+@if $debug == true {
+  body:after {
+    content: 'base styles';
+    display: block;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: $color-white;
+    background-color: $color-grey;
+    @media (min-width: $bp-small) {
+      content: '$bp-small';
+    }
+    @media (min-width: $bp-medium) {
+      content: '$bp-medium';
+    }
+    @media (min-width: $bp-large) {
+      content: '$bp-large';
+    }
+  }
+
+  .header,
+  .main,
+  .footer {
+    outline: 1px solid;
+  }
+  .section {
+    &__content {
+      max-height: none;
+    }
+  }
+}

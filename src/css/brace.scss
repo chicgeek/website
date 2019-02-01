@@ -1,0 +1,59 @@
+.brace {
+  position: relative;
+  width: auto;
+  min-width: $brace-size*1.75;
+  margin: $space calc(#{$brace-size} - #{$content-outset});
+  padding-bottom: $brace-size;
+
+  background-color: transparent;
+  background-image:
+    radial-gradient(
+      circle at 0 0,
+      rgba($brace-color,0) calc(#{$brace-size}*0.75 - 0.5px),
+      $brace-color calc(#{$brace-size}*0.75 + 0.5px),
+      $brace-color calc(#{$brace-size} - 0.5px),
+      rgba($brace-color,0) calc(#{$brace-size} + 0.5px)
+    ),
+    radial-gradient(
+      circle at $brace-size*1.75 0,
+      rgba($brace-color,0) calc(#{$brace-size}*0.75 - 0.5px),
+      $brace-color calc(#{$brace-size}*0.75 + 0.5px),
+      $brace-color calc(#{$brace-size} - 0.5px),
+      rgba($brace-color,0) calc(#{$brace-size} + 0.5px)
+    );
+  background-size: $brace-size*1.75 $brace-size;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  border: none;
+
+  color: $brace-color;
+  filter: drop-shadow(0 1px 1px rgba($color-grey, 0.15));
+  overflow: visible;
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    width: 50%;
+    height: 100%;
+    margin-top: -$brace-size/4;
+    border-top: $brace-size/4 solid currentColor;
+  }
+
+  &:before {
+    left: -$brace-size*0.75;
+    border-left: 1px solid transparent;
+    border-top-left-radius: 20% $brace-size*1.5;
+  }
+
+  &:after {
+    right: -$brace-size * 0.75;
+    border-right: 1px solid transparent;
+    border-top-right-radius: 20% $brace-size*1.5;
+  }
+
+  &--inverse {
+    transform: rotate(180deg);
+  }
+}
