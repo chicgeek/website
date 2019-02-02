@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
-import './../css/app.scss';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import './../css/app.scss'
 
 class App extends Component {
   constructor(props) {
@@ -20,6 +21,7 @@ class App extends Component {
   }
 
   blur() {
+    document.activeElement.blur();
     this.setState((state) => ({
       activeId: ''
     }))
@@ -36,9 +38,7 @@ class App extends Component {
             className={`section__heading heading--${section.id}`}
             children={section.title}
             tabIndex="0"
-            onClick={(e) => this.focus(e, section.id)}
             onFocus={(e) => this.focus(e, section.id)}
-            onBlur={() => this.blur()}
           />
           <div
             className="section__content"
@@ -54,6 +54,14 @@ class App extends Component {
       this.getItems(this.props.data)
     )
   }
+}
+
+App.propTypes = {
+  data: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    title: PropTypes.element.isRequired,
+    content: PropTypes.element.isRequired
+  })).isRequired,
 }
 
 export default App;
