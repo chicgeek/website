@@ -1,3 +1,16 @@
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: $space;
+}
+
 .header,
 .main,
 .footer {
