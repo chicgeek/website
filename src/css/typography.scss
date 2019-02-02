@@ -8,7 +8,7 @@
   }
 }
 
-@media (min-width: $bp-medium) and (min-height: $bp-medium)  {
+@media (min-width: $bp-medium) and (min-height: $bp-medium) and (orientation: landscape)  {
   :root {
     font-size: 1.15vh;
   }

@@ -9,9 +9,9 @@ $content-width: 25rem;
 $content-outset: $space;
 
 // breakpoints
-$bp-small: $content-width;
-$bp-medium: $content-width * 1.75;
-$bp-large: $content-width * 2.5;
+$bp-small: 320px;
+$bp-medium: $bp-small * 2;
+$bp-large: $bp-small * 3;
 
 // transitions
 $transition: 0.25s;

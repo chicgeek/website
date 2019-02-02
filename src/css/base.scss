@@ -2,12 +2,6 @@
   box-sizing: border-box;
 }
 
-@media (min-width: $bp-medium) and (min-height: $bp-medium)  {
-  html {
-    overflow: hidden;
-  }
-}
-
 *,
 *:before,
 *:after {
