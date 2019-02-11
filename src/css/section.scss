@@ -92,11 +92,6 @@
       max-height: 470px;
     }
 
-    // edge: https://stackoverflow.com/a/50788621/1846329
-    &:focus-within {
-      max-height: 470px;
-    }
-
     > * {
       position: relative;
       color: $color-white;
@@ -124,12 +119,7 @@
       text-align: left;
       transform: translateY(-50%);
 
-      .section--active &{
-        display: block;
-      }
-
-      // edge: https://stackoverflow.com/a/50788621/1846329
-      &:focus-within {
+      .section--active & {
         display: block;
       }
 
