@@ -9,8 +9,32 @@ class App extends Component {
       activeId: ''
     }
     this.getItems = this.getItems.bind(this)
+    this.handleBodyClick = this.handleBodyClick.bind(this)
+    this.handleTitleClick = this.handleTitleClick.bind(this)
     this.focus = this.focus.bind(this)
     this.blur = this.blur.bind(this)
+  }
+
+  componentWillMount() {
+    document.addEventListener('mousedown', this.handleBodyClick, false);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('mousedown', this.handleBodyClick, false);
+  }
+
+  handleBodyClick(e) {
+    if (this.node.contains(e.target)) {
+      return
+    }
+    this.blur()
+  }
+
+  handleTitleClick(e, id) {
+    e.preventDefault()
+    this.state.activeId !== id ?
+      this.focus(e, id) :
+      this.blur(e, id)
   }
 
   focus(e, id) {
@@ -21,7 +45,7 @@ class App extends Component {
   }
 
   blur() {
-    document.activeElement.blur();
+    document.activeElement.blur()
     this.setState((state) => ({
       activeId: ''
     }))
@@ -39,6 +63,7 @@ class App extends Component {
             children={section.title}
             tabIndex="0"
             onFocus={(e) => this.focus(e, section.id)}
+            onMouseDown={(e) => this.handleTitleClick(e, section.id)}
           />
           <div
             className="section__content"
@@ -51,7 +76,9 @@ class App extends Component {
 
   render() {
     return (
-      this.getItems(this.props.data)
+      <div ref={node => this.node = node}>
+        {this.getItems(this.props.data)}
+      </div>
     )
   }
 }

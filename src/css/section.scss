@@ -47,12 +47,6 @@
       transition: border-width $transition;
     }
 
-    // edge: https://stackoverflow.com/a/50788621/1846329
-    :focus-within > &:after {
-      border-width: $space/2 $space $space;
-      transition: border-width $transition;
-    }
-
     &:hover {
       cursor: pointer;
     }
@@ -68,12 +62,6 @@
       }
 
       .section--active &:after {
-        border-width: $space;
-        transition: border-width $transition;
-      }
-
-      // edge: https://stackoverflow.com/a/50788621/1846329
-      :focus-within > &:after {
         border-width: $space;
         transition: border-width $transition;
       }
