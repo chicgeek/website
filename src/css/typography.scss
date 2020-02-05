@@ -8,7 +8,7 @@
   }
 }
 
-@media (min-width: $bp-medium) and (min-height: $bp-medium) and (orientation: landscape)  {
+@media (min-width: $bp-medium) and (min-height: $bp-medium) and (orientation: landscape) {
   :root {
     font-size: 1.15vh;
   }
@@ -17,10 +17,11 @@
 html {
   font-size: 1.6rem;
   color: $color-grey;
+  font-display: auto;
 }
 
 body {
-  font-family: 'Raleway', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Raleway", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 500;
 }
 
@@ -32,7 +33,7 @@ h2 {
   text-transform: uppercase;
   letter-spacing: -0.05rem;
   line-height: 0.77;
-  font-family: 'Cabin Condensed', 'Arial', sans-serif;
+  font-family: "Cabin Condensed", "Arial", sans-serif;
 }
 
 h3 {
