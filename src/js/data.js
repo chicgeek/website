@@ -6,7 +6,7 @@ export const data = [
     title: <Fragment>Personal <span>details</span></Fragment>,
     content: <Fragment>
       <h3>About me</h3>
-      <p>I am a front end developer with over 10 years of experience as part of agency and in-house teams. In addition to technical excellence, I am a leader of people and advocate for inclusive work cultures.</p>
+      <p>I am a front end developer with over 15 years of experience as part of agency and in-house teams. In addition to technical excellence, I am a leader of people and advocate for inclusive work cultures.</p>
       <p>I'm a Canadian living and working in Sheffield&nbsp;UK. I have a master's degree in music and love design, board games, and red pandas.</p>
     </Fragment>
   },
@@ -39,7 +39,7 @@ export const data = [
           <h3>
             <a href="https://inviqa.com/">Inviqa</a>
           </h3>
-          Technical team lead, Senior front end developer (2013&nbsp;&#8209;&nbsp;present)
+          Software engineering manager, front end developer (2013&nbsp;&#8209;&nbsp;present)
         </li>
         <li>
           <h3>
