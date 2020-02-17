@@ -6,6 +6,8 @@
   opacity: 0.8;
   transition: opacity $transition;
 
+
+  // section colours
   @for $i from 2 through 10 {
     $section-color: desaturate(
       adjust-hue($color-teal, percentage($i * $i * 0.02)),
@@ -85,11 +87,12 @@
     width: 100vw;
     background-color: currentColor;
     text-align: center;
-    transition: max-height $transition-slow;
+    transition: max-height $transition-slow, margin-bottom $transition-slow;
     overflow: hidden;
 
     .section--active > & {
       max-height: 470px;
+      margin-bottom: $space;
     }
 
     > * {

@@ -1,0 +1,48 @@
+@media (prefers-color-scheme: dark) {
+  $color-light: lighten($color-grey, 40%);
+  $color-dark: darken($color-grey, 30%);
+  $color-teal-light: lighten($color-teal, 40%);
+
+  html {
+    color: $color-light;
+    background-color: black;
+  }
+
+  a {
+    text-decoration: underline rgba($color-dark, 0.7);
+
+    &:focus {
+      color: $color-white;
+      background-color: $color-dark;
+      outline: 1px solid $color-dark;
+    }
+  }
+
+  .brace {
+    color: $color-light;
+  }
+
+  .section {
+    color: $color-teal-light;
+
+    @for $i from 2 through 10 {
+      $section-color: desaturate(
+        adjust-hue($color-teal-light, percentage($i * $i * 0.02)),
+        percentage($i * 0.02)
+      );
+
+      &:nth-of-type(#{$i}) {
+        color: $section-color;
+
+        a:focus {
+          color: $section-color;
+        }
+      }
+    }
+    &__content {
+      > * {
+        color: $color-dark;
+      }
+    }
+  }
+}
