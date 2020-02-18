@@ -1,4 +1,4 @@
-The personal site of Laura Kishimoto, published to [laurakishimoto.com](http://www.laurakishimoto.com).
+The personal site of Laura Kishimoto, published to [chicgeek.uk](http://www.chicgeek.uk).
 
 ## About this site
 

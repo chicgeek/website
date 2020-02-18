@@ -4,7 +4,7 @@ https://keybase.io/chicgeek
 
 I hereby claim:
 
-  * I am an admin of http://laurakishimoto.com
+  * I am an admin of http://chicgeek.uk
   * I am chicgeek (https://keybase.io/chicgeek) on keybase.
   * I have a public key ASAaHVUXeip3ElQDUSk7KdDKtX25E4I-16bC_TG57WFcpwo
 
@@ -27,7 +27,7 @@ To do so, I am signing this object:
     },
     "service": {
       "entropy": "gB+fNFHmkfNJ7FgaMq68paQE",
-      "hostname": "laurakishimoto.com",
+      "hostname": "chicgeek.uk",
       "protocol": "http:"
     },
     "type": "web_service_binding",

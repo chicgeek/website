@@ -1,13 +1,14 @@
 {
-  "name": "laurakishimoto.com",
-  "homepage": "https://www.laurakishimoto.com",
-  "version": "0.1.0",
+  "name": "chicgeek.uk",
+  "description": "The home page of Laura Kishimoto",
+  "homepage": "https://www.chicgeek.uk",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "node-sass": "^4.11.0",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "react-scripts": "2.1.3"
+    "node-sass": "^4.13.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "^3.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -27,7 +28,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "gh-pages": "^2.0.1",
-    "prop-types": "^15.6.2"
+    "gh-pages": "^2.2.0",
+    "prop-types": "^15.7.2"
   }
 }

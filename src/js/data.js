@@ -143,8 +143,8 @@ export const data = [
             </a>
           </li>
           <li>
-            <a href="mailto:hello@laurakishimoto.com?subject=An email from laurakishimoto.com">
-              Email me at hello@laurakishimoto.com
+            <a href="mailto:laura@chicgeek.uk?subject=An email from chicgeek.uk">
+              Email me at laura@chicgeek.uk
             </a>
           </li>
         </ul>
