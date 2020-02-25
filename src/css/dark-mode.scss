@@ -1,20 +1,18 @@
 @media (prefers-color-scheme: dark) {
-  $color-light: lighten($color-grey, 40%);
-  $color-dark: darken($color-grey, 30%);
-  $color-teal-light: lighten($color-teal, 40%);
+  $color-light: lighten($color-grey, 30%);
+  $color-dark: darken($color-grey, 26%);
+  $color-teal-light: desaturate(lighten($color-teal, 30%), 50%);
 
   html {
     color: $color-light;
-    background-color: black;
+    background-color: darken($color-grey, 30%);
   }
 
   a {
-    text-decoration: underline rgba($color-dark, 0.7);
+    text-decoration: underline currentColor;
 
     &:focus {
-      color: $color-white;
-      background-color: $color-dark;
-      outline: 1px solid $color-dark;
+      color: $color-dark;
     }
   }
 
@@ -33,15 +31,35 @@
 
       &:nth-of-type(#{$i}) {
         color: $section-color;
+      }
+    }
 
-        a:focus {
-          color: $section-color;
+    &__heading {
+      &:after {
+        border-bottom-color: $color-dark;
+      }
+
+      @media (min-width: $bp-medium) {
+        &:after {
+          border-color: transparent;
+          border-right-color: $color-dark;
+        }
+      }
+
+      @media (min-width: $bp-large) {
+        :nth-of-type(2n) > &:after {
+          border-color: transparent;
+          border-left-color: $color-dark;
         }
       }
     }
+
     &__content {
+      background-color: $color-dark;
+      color: $color-light;
+
       > * {
-        color: $color-dark;
+        color: inherit;
       }
     }
   }
