@@ -68,7 +68,7 @@ class App extends Component {
           }`}
         >
           <h2
-            className={`section__heading heading--${section.id}`}
+            className={`section__heading heading heading--${section.id}`}
             children={section.title}
             tabIndex="0"
             onFocus={e => this.focus(e, section.id)}

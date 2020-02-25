@@ -1,23 +1,30 @@
 @media (prefers-color-scheme: dark) {
+  $color-background: darken($color-grey, 30%);
   $color-light: lighten($color-grey, 30%);
   $color-dark: darken($color-grey, 26%);
   $color-teal-light: desaturate(lighten($color-teal, 30%), 50%);
 
   html {
     color: $color-light;
-    background-color: darken($color-grey, 30%);
+    background-color: $color-background;
   }
 
   a {
     text-decoration: underline currentColor;
 
     &:focus {
-      color: $color-dark;
+      background-color: $color-light;
+      outline: 1px solid $color-light;
     }
   }
 
   .brace {
     color: $color-light;
+  }
+
+  .heading {
+    // explicit for contrast checkers
+    background-color: $color-background;
   }
 
   .section {
@@ -31,10 +38,15 @@
 
       &:nth-of-type(#{$i}) {
         color: $section-color;
+
+        a:focus {
+          color: $color-dark; // override light theme
+        }
       }
     }
 
     &__heading {
+
       &:after {
         border-bottom-color: $color-dark;
       }
