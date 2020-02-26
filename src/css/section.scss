@@ -10,8 +10,8 @@
   // section colours
   @for $i from 2 through 10 {
     $section-color: desaturate(
-      adjust-hue($color-teal, percentage($i * $i * 0.02)),
-      percentage($i * 0.05)
+      adjust-hue($color-teal, percentage($i * $i * 0.01)),
+      percentage($i * 0.03)
     );
 
     &:nth-of-type(#{$i}) {

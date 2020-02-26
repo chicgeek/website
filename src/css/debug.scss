@@ -31,6 +31,8 @@ $debug: false !default;
     outline: 1px solid;
   }
   .section {
+    opacity: 1;
+
     &__content {
       max-height: none;
     }

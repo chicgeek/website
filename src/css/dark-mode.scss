@@ -32,15 +32,16 @@
 
     @for $i from 2 through 10 {
       $section-color: desaturate(
-        adjust-hue($color-teal-light, percentage($i * $i * 0.02)),
-        percentage($i * 0.02)
+        adjust-hue($color-teal-light, percentage($i * $i * 0.015)),
+        percentage($i * 0.015)
       );
 
       &:nth-of-type(#{$i}) {
         color: $section-color;
 
         a:focus {
-          color: $color-dark; // override light theme
+          // override light theme
+          color: $color-dark;
         }
       }
     }
