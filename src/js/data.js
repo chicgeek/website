@@ -12,13 +12,10 @@ export const data = [
       <Fragment>
         <h3>About me</h3>
         <p>
-          I am a front end developer with over 15 years of experience as part of
-          agency and in-house teams. In addition to technical excellence, I am a
-          leader of people and advocate for inclusive work cultures.
+          I am a front end engineering manager with over 15 years of experience. In addition to being a technical authority, I am a leader of people and advocate for inclusive work cultures.
         </p>
         <p>
-          I'm a Canadian living and working in Sheffield&nbsp;UK. I have a
-          master's degree in music and love design, board games, and red pandas.
+          I'm a Canadian living and working in Sheffield&nbsp;UK. I have an MA in vocal music and love design, the outdoors, games, and red pandas.
         </p>
       </Fragment>
     )
@@ -34,15 +31,11 @@ export const data = [
       <Fragment>
         <h3>User-centric approach</h3>
         <p>
-          I focus on the intersection of user need, client demand, and technical
-          limitation. I prioritise user experience, accessibility, and brand
-          identity in my work.
+          I focus on the intersection of user need, client demand, and technical limitation. I prioritise user experience, accessibility, and maintainability in my work.
         </p>
-        <h3>HTML, CSS, JavaScript</h3>
+        <h3>Technologies and approaches</h3>
         <p>
-          I write accessible HTML styled with SCSS. My JavaScript experience
-          includes React, Redux, and Styled Components. I work with my team to
-          ensure quality code, modularity, and maintainability.
+          I work with my teams on modern architectures to deliver beautiful and efficient websites using HTML, CSS, JavaScript. I guide our component-driven approaches, ensuring quality code, modularity, and maintainability.
         </p>
       </Fragment>
     )
@@ -58,24 +51,16 @@ export const data = [
       <Fragment>
         <h3>Leader and mentor</h3>
         <p>
-          I am a reliable and trusted member of any team. I earn the respect of
-          my coworkers through leadership and enabling others to do their best.
-          I am an empathetic and supportive manager and enjoy mentoring other
-          developers.
+          I am a reliable and trusted member of any team. I earn the respect of my coworkers through leadership and enabling and empowering others to do their best. I am an empathetic and supportive manager, guiding individuals and entire teams to learn, share, and become more efficient.
         </p>
         <h3>Culture and community</h3>
         <p>
-          I strive to create and encourage a safe and inclusive work environment
-          for everyone. Outside of work,{" "}
-          <a href="https://inviqa.com/blog/how-user-groups-enrich-our-tech-community">
-            I am involved with user groups
-          </a>
-          . I organise{" "}
+          I strive to create and encourage a safe and inclusive work environment for everyone. Outside of work, I organise{" "}
           <a href="https://twitter.com/frontendsheff">
             Front&nbsp;End Sheffield
           </a>
           , <a href="https://twitter.com/frontendnorth">Front&nbsp;End North</a>
-          , and previously organised Sheffield&nbsp;JS.
+          , and have previously organised Sheffield&nbsp;JS.
         </p>
       </Fragment>
     )
@@ -94,7 +79,7 @@ export const data = [
             <h3>
               <a href="https://inviqa.com/">Inviqa</a>
             </h3>
-            Software engineering manager, front end developer
+            Software&nbsp;engineering&nbsp;manager, technical&nbsp;team&nbsp;lead, front&nbsp;end&nbsp;developer
             (2013&nbsp;&#8209;&nbsp;present)
           </li>
           <li>
@@ -104,13 +89,8 @@ export const data = [
             Lead front end developer (2017&nbsp;&#8209;&nbsp;2018)
           </li>
           <li>
-            <h3>Previous roles</h3>
-            <a href="https://www.mec.ca/">Mountain&nbsp;Equipment&nbsp;Co-op</a>
-            , <a href="https://www.vancity.com/">Vancity</a>,{" "}
-            <a href="https://www.york.ac.uk/">University&nbsp;of&nbsp;York</a>,{" "}
-            <a href="https://www.uwo.ca/">
-              University&nbsp;of&nbsp;Western&nbsp;Ontario
-            </a>
+            <h3>My CV</h3>
+            <a href="http://bit.ly/chicgeek-cv">Laura Kishimoto</a>
           </li>
         </ul>
       </Fragment>
