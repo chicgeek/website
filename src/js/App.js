@@ -5,9 +5,6 @@ import "./../css/app.scss";
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      activeId: ""
-    };
     this.getItems = this.getItems.bind(this);
     this.handleBodyClick = this.handleBodyClick.bind(this);
     this.handleTitleClick = this.handleTitleClick.bind(this);
@@ -16,7 +13,7 @@ class App extends Component {
     this.handleEscapeKey = this.handleEscapeKey.bind(this);
   }
 
-  componentWillMount() {
+  componentDidMount() {
     document.addEventListener("mousedown", this.handleBodyClick, false);
     document.addEventListener("keydown", this.handleEscapeKey, false);
   }
@@ -40,22 +37,14 @@ class App extends Component {
   }
 
   handleTitleClick(e, id) {
-    e.preventDefault();
-    this.state.activeId !== id ? this.focus(e, id) : this.blur(e, id);
   }
 
   focus(e, id) {
     e.target.focus();
-    this.setState(state => ({
-      activeId: id
-    }));
   }
 
   blur() {
     document.activeElement.blur();
-    this.setState(state => ({
-      activeId: ""
-    }));
   }
 
   getItems(data) {
@@ -63,9 +52,7 @@ class App extends Component {
       return (
         <section
           key={section.id}
-          className={`section ${
-            this.state.activeId === section.id ? "section--active" : ""
-          }`}
+          className="section"
         >
           <h2
             className={`section__heading heading heading--${section.id}`}

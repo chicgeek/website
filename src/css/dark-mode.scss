@@ -2,7 +2,7 @@
   $color-background: darken($color-grey, 30%);
   $color-light: lighten($color-grey, 30%);
   $color-dark: darken($color-grey, 26%);
-  $color-teal-light: desaturate(lighten($color-teal, 30%), 50%);
+  $color-primary-light: desaturate(lighten($color-primary, 30%), 50%);
 
   html {
     color: $color-light;
@@ -28,11 +28,11 @@
   }
 
   .section {
-    color: $color-teal-light;
+    color: $color-primary-light;
 
     @for $i from 2 through 10 {
       $section-color: desaturate(
-        adjust-hue($color-teal-light, percentage($i * $i * 0.015)),
+        adjust-hue($color-primary-light, percentage($i * $i * 0.015)),
         percentage($i * 0.015)
       );
 

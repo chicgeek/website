@@ -1,16 +1,18 @@
-.section {
+// in case I want to change names
+$section: 'section';
+
+.#{$section} {
   position: relative;
   margin: $space/2 auto;
-  color: $color-teal;
+  color: $color-primary;
   font-size: 16px;
   opacity: 0.8;
   transition: opacity $transition;
 
-
   // section colours
   @for $i from 2 through 10 {
     $section-color: desaturate(
-      adjust-hue($color-teal, percentage($i * $i * 0.01)),
+      adjust-hue($color-primary, percentage($i * $i * 0.01)),
       percentage($i * 0.03)
     );
 
@@ -25,10 +27,6 @@
 
   &:hover,
   &:focus,
-  &--active {
-    opacity: 1;
-  }
-
   &:focus-within {
     opacity: 1;
   }
@@ -44,7 +42,8 @@
       transition: border-width $transition $transition;
     }
 
-    .section--active &:after {
+    .#{$section}:focus &:after,
+    .#{$section}:focus-within &:after {
       border-width: $space/2 $space $space;
       transition: border-width $transition;
     }
@@ -63,7 +62,8 @@
         transform: translateY(-50%);
       }
 
-      .section--active &:after {
+      .#{$section}:focus &:after,
+      .#{$section}:focus-within &:after {
         border-width: $space;
         transition: border-width $transition;
       }
@@ -90,7 +90,8 @@
     transition: max-height $transition-slow, margin-bottom $transition-slow;
     overflow: hidden;
 
-    .section--active > & {
+    .#{$section}:focus > &,
+    .#{$section}:focus-within > & {
       max-height: 470px;
       margin-bottom: $space;
     }
@@ -122,7 +123,7 @@
       text-align: left;
       transform: translateY(-50%);
 
-      .section--active & {
+      .#{$section}:focus-within & {
         display: block;
       }
 
