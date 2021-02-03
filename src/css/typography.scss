@@ -73,6 +73,7 @@ a {
     color: $color-teal;
     text-decoration: none;
     background-color: $color-white;
-    outline: 1px solid $color-white;
+    outline: 2px solid $color-white;
+    outline-offset: -1px;
   }
 }
