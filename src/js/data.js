@@ -77,10 +77,17 @@ export const data = [
         <ul>
           <li>
             <h3>
+              <a href="https://prolific.co/">Prolific</a>
+            </h3>
+            Engineering&nbsp;manager
+            (2021&nbsp;&#8209;&nbsp;present)
+          </li>
+          <li>
+            <h3>
               <a href="https://inviqa.com/">Inviqa</a>
             </h3>
             Software&nbsp;engineering&nbsp;manager, technical&nbsp;team&nbsp;lead, front&nbsp;end&nbsp;developer
-            (2013&nbsp;&#8209;&nbsp;present)
+            (2013&nbsp;&#8209;&nbsp;2021)
           </li>
           <li>
             <h3>
