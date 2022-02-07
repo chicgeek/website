@@ -79,7 +79,7 @@ export const data = [
             <h3>
               <a href="https://prolific.co/">Prolific</a>
             </h3>
-            Engineering&nbsp;manager
+            Head of engineering (interim), engineering&nbsp;manager
             (2021&nbsp;&#8209;&nbsp;present)
           </li>
           <li>
